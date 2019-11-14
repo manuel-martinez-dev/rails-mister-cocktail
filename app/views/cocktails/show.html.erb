@@ -1,0 +1,20 @@
+<h1>show cockTails</h1>
+
+<h2><%= @cocktail.name %></h2>
+<p><%= link_to 'destroy', cocktail_path(@cocktail), class: 'btn btn-danger', method: :delete %></p>
+
+
+<% @cocktail.doses.each do |dose| %>
+  <ul>
+    <li><%= dose.ingredient['name'] %>: <%= dose.description %>
+    <%= link_to dose_path(dose), class: 'btn btn-danger', method: :delete do %>
+    delete
+    <% end %>
+    </li>
+  </ul>
+<% end %>
+
+
+<p><%= link_to 'Add duh!se', new_cocktail_dose_path(@cocktail), class: 'btn btn-secondary' %></p>
+<p><%= link_to 'Finished?', cocktails_path, class: 'btn btn-success' %></p>
+
