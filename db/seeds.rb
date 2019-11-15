@@ -24,6 +24,6 @@ Cocktail.destroy_all
 
 puts 'Creating COCK tails...'
 
-Cocktail.create!(name: 'White Russian')
-Cocktail.create!(name: 'Long Island Ice Tea')
-Cocktail.create!(name: 'Cuba Libre')
+# Cocktail.create!(name: 'White Russian')
+# Cocktail.create!(name: 'Long Island Ice Tea')
+# Cocktail.create!(name: 'Cuba Libre')
