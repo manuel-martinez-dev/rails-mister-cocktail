@@ -1,9 +1,9 @@
 <%# I am located in Doses %>
 
-<h1>Doses</h1>
+<h1>Duh!ses</h1>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.input :description %>
   <%= f.association :ingredient, collection: Ingredient.order(:name) %>
-  <%= f.submit "Add dose"%>
+  <%= f.submit 'Add duh!se', class: 'btn btn-success mt-3'%>
 <% end %>
