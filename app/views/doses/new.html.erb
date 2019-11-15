@@ -1,5 +1,6 @@
 <%# I am located in Doses %>
-
+<div class="m-4">
+  <div class="container">
 <h1>Duh!ses</h1>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
@@ -7,3 +8,5 @@
   <%= f.association :ingredient, collection: Ingredient.order(:name) %>
   <%= f.submit 'Add duh!se', class: 'btn btn-success mt-3'%>
 <% end %>
+</div>
+</div>
