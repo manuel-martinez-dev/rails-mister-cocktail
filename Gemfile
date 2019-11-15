@@ -38,6 +38,9 @@ gem 'jbuilder', '~> 2.5'
 # dotenv secure keys
 gem 'dotenv-rails', groups: [:development, :test]
 
+# cloudinary for the image hosting
+gem 'cloudinary', '~> 1.9.1'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
